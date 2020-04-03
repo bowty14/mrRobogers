@@ -1,9 +1,17 @@
-function roboTalk(userInput)
+function roboTalk(userInput) {
+    var number = [];
+for (var i = 0; i <= userInput; i++) {
+  if (i.toString().includes("1")) {
+    console.log(i);
+    number.push("Beep!")
+    alert(number);
+      }
+       
+    }  
+} 
 
-for (var index = 0; index <= number; index += 1) {
-  console.log(index);
-  $(".output").text(index)
-}
+
+
 
 
 
@@ -15,9 +23,13 @@ for (var index = 0; index <= number; index += 1) {
 $(document).ready(function(){
   $("form#formOne").submit(function(event) {
     event.preventDefault();
-     var number = parseInt($("input#userInput").val())
-      })  
-    });
+     var userInput = parseInt($("input#userInput").val())
+     var output = roboTalk(userInput)
+     if (output) {
+      $(".output").text(output);
+     }
+    });  
+  });
 
 
     
