@@ -1,14 +1,13 @@
 function roboTalk(userInput) {
     var number = [];
 for (var i = 0; i <= userInput; i++) {
-  if (i.toString().includes("1")) {
-    number.push("Beep!")
+  if (i.toString().includes("3")) {
+    number.push("Won't you be my neighbor?")
       }else if (i.toString().includes("2")) {
         number.push("Boop!")
-      }else if (i.toString().includes("3")) {
+      }else if (i.toString().includes("1")) {
         console.log(i);
-        number.push("Won't you be my neighbor")
-        alert(number);
+        number.push("Beep!")
       }else {
         number.push (" " + i)
       }
