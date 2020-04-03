@@ -2,16 +2,19 @@ function roboTalk(userInput) {
     var number = [];
 for (var i = 0; i <= userInput; i++) {
   if (i.toString().includes("1")) {
-    console.log(i);
     number.push("Beep!")
       }else if (i.toString().includes("2")) {
         number.push("Boop!")
       }else if (i.toString().includes("3")) {
+        console.log(i);
         number.push("Won't you be my neighbor")
         alert(number);
+      }else {
+        number.push (" " + i)
       }
        
     }  
+    return number;
 } 
 
 
