@@ -3,7 +3,8 @@ $(document).ready(function(){
     event.preventDefault();
     
     var number = $("input#userInput").val()
-    var display = [""]
+    var display = []
+    var greeting = "Won't you be my neighbor?"
     for(var index = 0; index <= number; index += 1) {
       console.log(index);
       //alert(index);
@@ -11,15 +12,16 @@ $(document).ready(function(){
       $(".output").text(display)
     }
       
-      display.forEach(function(display) {
-        var greeting1 = (display.replace("1", "Beep!"))
-        $(".output").text(greeting1);
-      })
+
+    let str = display
+    let newstr = str.split('1').join("Beep!")
+      $(".output").text(newstr);
+      
 
       // if (isNaN(number)) {
       //   $(".output").text("Please enter a number")
-      // } else if (number  "1") {
-      //   $(".output").text(greeting)
+      // } else if (number ^ 3) {
+      //   $(".output").text(display + greeting)
       // }
 
 
