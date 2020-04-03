@@ -34,8 +34,14 @@ body {
   border: solid black;
   color: black;
 }
+.name{
+  color: darkslategray;
+}
+.output {
+  color: darkslategray;
+}
 @media screen and (max-width:480) and (min-width:300) {
-
+  
 }
 @media screen and (max-width:1000) and (min-width:700) {
   
