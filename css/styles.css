@@ -41,7 +41,12 @@ body {
   color: darkslategray;
 }
 @media screen and (max-width:480) and (min-width:300) {
-  
+  .name {
+    color: white;
+  }
+  .output {
+    color: white;
+  }
 }
 @media screen and (max-width:1000) and (min-width:700) {
   
