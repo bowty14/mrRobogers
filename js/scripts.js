@@ -1,23 +1,31 @@
-function roboSounds(number) {
-}
-
-
-
-
-
-
-
-
 $(document).ready(function(){
   $("form#formOne").submit(function(event) {
     event.preventDefault();
     
-    var number = parseInt($("input#userInput").val())
-    for(var index = 0; index <= number; index += 1) 
-      alert(index);
-      })
+    var number = $("input#userInput").val()
+    var display = []
+    var greeting = index.replace("3", "Won't you be my neighbor?")
+    for(var index = 0; index <= number; index += 1) {
+      console.log(index);
+      //alert(index);
+      display.push(index);
+      $(".output").text(display)
+    }
+      
+      
+
+      if (isNaN(number)) {
+        $(".output").text(display + greeting)
+      } else if (number ^ "3") {
+        $(".output").text(greeting)
+      }
+
+
+      })  
     });
 
+
+    
 
 
 
