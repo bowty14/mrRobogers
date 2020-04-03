@@ -1,15 +1,21 @@
+function roboTalk(userInput)
+
+for (var index = 0; index <= number; index += 1) {
+  console.log(index);
+  $(".output").text(index)
+}
+
+
+
+
+
+
+
+
 $(document).ready(function(){
   $("form#formOne").submit(function(event) {
     event.preventDefault();
-    
-    var number = $("input#userInput").val()
-    for(var index = 0; index <= number; index += 1) {
-      console.log(index);
-      $(".output").text(index+ "")
-    }
-      
-
-
+     var number = parseInt($("input#userInput").val())
       })  
     });
 
