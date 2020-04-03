@@ -17,13 +17,26 @@ body {
 #userInput{
   margin: 12px;
   border: solid slateblue;
-  padding: 15px;
+  padding: 7px;
   background-color: turquoise;
-  
 }
-placeholder {
+#name { 
+  margin: 12px;
+  border: solid slateblue;
+  padding: 7px;
+  background-color: turquoise;
+}
+::placeholder {
   color: black;
 }
 .btn {
+  margin: 12px;
+  border: solid black;
   color: black;
+}
+@media screen and (max-width:480) and (min-width:300) {
+
+}
+@media screen and (max-width:1000) and (min-width:700) {
+  
 }
