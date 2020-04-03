@@ -1,16 +1,20 @@
 function roboTalk(userInput) {
     var number = [];
 for (var i = 0; i <= userInput; i++) {
-  if (i.toString().includes("2")){
+  if (i.toString().includes("3")) {
     console.log(i);
-    number.push("Boop!")
-  }else if (i.toString().includes("1")) {
-    console.log(i);
-    number.push("Beep!")
+    number.push("Won't you be my neighbor?");
+  // }else if (i.toString().includes("2")) {
+  //   console.log(i);
+  //   number.push("Boop!");
+  // }else if (i.toString().includes("1")) {
+  //   console.log(i);
+  //   number.push("Beep!");
     alert(number);
       } 
        
-    }  
+    }
+    return userInput;  
 } 
 
 
