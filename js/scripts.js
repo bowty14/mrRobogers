@@ -18,7 +18,10 @@ for (var i = 0; i <= userInput; i++) {
 
 
 
-
+function neighbor(userName) {
+    $(".name").text("Would you be my neighbor" + " " + userName + "?");
+  
+}
 
 
 
@@ -29,7 +32,9 @@ for (var i = 0; i <= userInput; i++) {
 $(document).ready(function(){
   $("form#formOne").submit(function(event) {
     event.preventDefault();
+    var userName = $("input#name").val()
      var userInput = parseInt($("input#userInput").val())
+     var name = neighbor(userName)
      var output = roboTalk(userInput)
      if (output) {
       $(".output").text(output);

@@ -1,0 +1,15 @@
+body {
+  height: 100%;
+  background-image: linear-gradient(lightblue,powderblue, blue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.jumbotron {
+  background-color: lightgreen;
+}
+.btn {
+  color: black;
+}
