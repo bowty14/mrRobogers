@@ -1,44 +1,31 @@
 function roboTalk(userInput) {
-    var number = [];
-for (var i = 0; i <= userInput; i++) {
-  if (i.toString().includes("3")) {
-    number.push("Won't you be my neighbor?")
-      }else if (i.toString().includes("2")) {
-        number.push("Boop!")
-      }else if (i.toString().includes("1")) {
-        console.log(i);
-        number.push("Beep!")
-      }else {
-        number.push (" " + i)
-      }
-       
-    }  
+   var number = [];
+    for (var i = 0; i <= userInput; i++) {
+    if (i.toString().includes("3")) {
+        number.push(" Won't you be my neighbor?");
+    }else if (i.toString().includes("2")) {
+       number.push(" Boop!");
+    }else if (i.toString().includes("1")) {
+       number.push(" Beep!");
+    }else {
+       number.push (" " + i)
+      }; 
+    };  
     return number;
-} 
-
-
-
+}; 
 function neighbor(userName) {
-    $(".name").text("Would you be my neighbor" + " " + userName + "?");
-  
-}
-
-
-
-
-
-
-
+  $(".name").text("Would you be my neighbor " + " " + userName + "?");
+};
 $(document).ready(function(){
   $("form#formOne").submit(function(event) {
     event.preventDefault();
-    var userName = $("input#name").val()
-     var userInput = parseInt($("input#userInput").val())
-     var name = neighbor(userName)
-     var output = roboTalk(userInput)
+     var userName = $("input#name").val();
+     var userInput = parseInt($("input#userInput").val());
+     var name = neighbor(userName);
+     var output = roboTalk(userInput);
      if (output) {
       $(".output").text(output);
-     }
+     };
     });  
   });
 
